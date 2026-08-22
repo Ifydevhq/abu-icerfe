@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* --font-sans is defined by next/font on <html> (see layout.tsx). Do NOT
+     redeclare it here: :root and next/font's generated class have equal
+     specificity, so a redeclaration later in the cascade wins and points at a
+     family name that was never registered — silently falling back to
+     system-ui. Fallback stacks belong in tailwind.config.ts. */
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans;
+  }
+
+  ::selection {
+    @apply bg-brand-100 text-brand-900;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  /* The one recurring ornament on the site: a short gold rule that sits above
+     section labels. Keeps the page from feeling flat without adding colour. */
+  .rule-mark::before {
+    content: '';
+    @apply block h-px w-10 bg-gold-500 mb-4;
+  }
+
+  .link-underline {
+    @apply relative inline-flex items-center gap-1.5;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+@layer utilities {
+  .grain {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.07) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+}
