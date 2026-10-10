@@ -4,97 +4,154 @@ export type Person = {
   unit?: string;
   photo?: string;
   qualifications?: string;
+  /** Civil-service grade, where it differs from the job title. */
+  rank?: string;
+  email?: string;
 };
 
 /** The Centre's management team. */
 export const administration: Person[] = [
-  { name: 'Dr. I. B. Bugaje', role: 'Director', photo: '/people/director.jpg', qualifications: 'B.Sc (ABU), M.Sc (Salford), PhD (UPM)' },
-  { name: "Dr Moh'd H. Ya'u", role: 'Deputy Director' },
-  { name: 'Mrs. L. D. Lambaya', role: 'Administrative Secretary' },
-  { name: 'Mrs. Zainab A. A.', role: 'Finance Officer' },
-  { name: 'Mrs. M. S. Ibrahim', role: "Centre's Librarian" },
-  { name: 'Hamza Ahmed', role: 'Resident Internal Auditor' },
+  {
+    name: "Prof. Baba El-Yakubu Jibril",
+    role: "Director",
+    photo: "/people/director.jpeg",
+    qualifications:
+      "BEng (ABU), MSc (Dahran), PhD (Salford), FNSE, COREN (Registered)",
+  },
+  { name: "Dr Moh'd H. Ya'u", role: "Deputy Director" },
+  { name: "Mrs. L. D. Lambaya", role: "Administrative Secretary" },
+  { name: "Mrs. Zainab A. A.", role: "Finance Officer" },
+  { name: "Mrs. M. S. Ibrahim", role: "Centre's Librarian" },
+  { name: "Hamza Ahmed", role: "Resident Internal Auditor" },
 ];
 
 /** Full staff list, grouped by function. */
-export const staffGroups: { title: string; blurb: string; members: Person[] }[] = [
+export const staffGroups: {
+  title: string;
+  blurb: string;
+  members: Person[];
+}[] = [
   {
-    title: 'Directorate',
-    blurb: 'Leadership and administration of the Centre.',
+    title: "Leadership",
+    blurb: "Direction and oversight of the Centre.",
     members: [
-      { name: 'Dr. I. B. Bugaje', role: 'Director', photo: '/people/director.jpg' },
-      { name: "Dr Moh'd H. Ya'u", role: 'Deputy Director' },
-      { name: 'Mrs. L. D. Lambaya', role: 'Administrative Secretary' },
+      {
+        name: "Prof. Baba El-Yakubu Jibril",
+        role: "Director",
+        qualifications: "BEng (ABU), MSc (Dahran), PhD (Salford), FNSE, COREN (Registered)",
+        photo: "/people/director.jpeg",
+      },
+      { name: "Dr Moh'd H. Ya'u", role: "Deputy Director" },
     ],
   },
   {
-    title: 'Finance & Audit',
-    blurb: 'Stewardship of the Centre’s funds and procurement.',
+    title: "Academic staff",
+    blurb: "Teaching, research supervision and entrepreneurship training.",
     members: [
-      { name: 'Mrs. Zainab A. A.', role: 'Finance Officer' },
-      { name: 'Idris Ahmad', role: 'Principal Accountant' },
-      { name: 'Hamza Ahmed', role: 'Resident Internal Auditor' },
-      { name: 'Salamatu Yohanna', role: 'Procurement Officer' },
+      {
+        name: "Dr. Auwalu Inusa",
+        role: "Associate Professor",
+        qualifications: "PhD, ACS, MAMN",
+        photo: "/people/gens-coordinator.jpg",
+      },
+      {
+        name: "Muktar Abdullahi",
+        role: "Lecturer",
+        qualifications: "MSc Rural Finance and Entrepreneurship · PhD Candidate",
+        email: "muktarabdullahi@abu.edu.ng",
+        photo: "/people/abuicerfe-staff-muktar-abdullahi.jpeg",
+      },
+      { name: "Mal. A. S. Richifa", role: "Assistant GENS Coordinator" },
+      { name: "Shamsudeen S. M.", role: "Skill Acquisition Trainer" },
     ],
   },
   {
-    title: 'Academic & Training',
-    blurb: 'Entrepreneurship teaching, skills training and student support.',
+    title: "Registry & administration",
+    blurb: "Records, correspondence and the Centre's day-to-day administration.",
     members: [
-      { name: 'Dr. Auwal Inusa', role: 'Entrepreneurship GENS Coordinator', photo: '/people/gens-coordinator.jpg' },
-      { name: 'Mal. A. S. Richifa', role: 'Assistant GENS Coordinator' },
-      { name: 'Shamsudeen S. M.', role: 'Skill Acquisition Trainer' },
+      {
+        name: "Zainab Abdullahi Musa",
+        role: "Principal Assistant Registrar",
+        photo: "/people/abuicerfe-staff-zainab-abdullahi-musa.png",
+      },
+      { name: "Mrs. L. D. Lambaya", role: "Administrative Secretary" },
     ],
   },
   {
-    title: 'Library & Information',
-    blurb: 'Research collections and knowledge services.',
+    title: "Finance, audit & procurement",
+    blurb: "Stewardship of the Centre's funds, controls and purchasing.",
     members: [
-      { name: 'Mrs. M. S. Ibrahim', role: "Centre's Librarian" },
-      { name: 'Abubakar Haruna', role: 'Deputy Librarian' },
+      {
+        name: "Hamza Ahmed",
+        role: "Resident Internal Auditor",
+        rank: "Higher Executive Officer (Audit)",
+        photo: "/people/abuicerfe-staff-hamza-ahmed.jpeg",
+      },
+      {
+        name: "Danjuma Musa",
+        role: "Procurement Officer",
+        rank: "Principal Procurement Officer",
+        photo: "/people/abuicerfe-staff-danjuma-musa.jpeg",
+      },
+      { name: "Idris Ahmad", role: "Principal Accountant" },
     ],
   },
   {
-    title: 'Technology & Operations',
-    blurb: 'Systems, facilities and day-to-day operations.',
+    title: "Library & information",
+    blurb: "Research collections and knowledge services.",
     members: [
-      { name: 'Nuraddeen Yahuza', role: 'IT Consultant / Webmaster' },
-      { name: 'Muwaffaq M. Sadiq', role: 'Senior Computer Operator' },
-      { name: 'Aliyu Umar', role: 'Senior Office Assistant' },
+      {
+        name: "Aisha Ibrahim Jalo",
+        role: "Senior Library Officer",
+        photo: "/people/abuicerfe-staff-aisha-ibrahim-jalo.jpeg",
+      },
+      { name: "Mrs. M. S. Ibrahim", role: "Centre's Librarian" },
+      { name: "Abubakar Haruna", role: "Deputy Librarian" },
+    ],
+  },
+  {
+    title: "Technology & operations",
+    blurb: "Systems, facilities and day-to-day operations.",
+    members: [
+      { name: "Nuraddeen Yahuza", role: "IT Consultant / Webmaster" },
+      { name: "Muwaffaq M. Sadiq", role: "Senior Computer Operator" },
+      { name: "Aliyu Umar", role: "Senior Office Assistant" },
     ],
   },
 ];
 
-/** Governing Board — university principal officers. */
-export const governingBoard: Person[] = [
-  { name: 'Prof. Kabir Bala', role: 'Chairman', unit: 'Vice-Chancellor, Ahmadu Bello University', photo: '/people/vice-chancellor.jpg' },
-  { name: 'Mal. Rabiu Samaila', role: 'Member', unit: 'Registrar' },
-  { name: 'Dr. A. L. Gambo', role: 'Member', unit: 'University Librarian' },
-  { name: "Mal. Moh'd B. Aminu", role: 'Member', unit: 'Bursar' },
-  { name: 'Dr. I. B. Bugaje', role: 'Member / Secretary', unit: 'Director, ICERFE', photo: '/people/director.jpg' },
-];
 
 export const directorProfile = {
-  name: 'Dr. Idris Bashir Bugaje',
-  role: 'Director',
-  photo: '/people/director.jpg',
-  qualifications: 'B.Sc (ABU), M.Sc (Salford), PhD (UPM)',
+  name: "Prof. Baba El-Yakubu Jibril",
+  role: "Director",
+  photo: "/people/director.jpeg",
+  qualifications:
+    "BEng (ABU), MSc (Dahran), PhD (Salford), FNSE, COREN (Registered)",
   summary:
-    'Dr. Idris Bashir Bugaje leads ICERFE, bringing together an academic background in management and entrepreneurship with practical consultancy across public and development sectors.',
+    "Prof. Baba El-Yakubu Jibril is the Director of the International Center of Excellence for Rural Finance and Entrepreneurship. He is a Fellow of the Nigerian Society of Engineers and a COREN-registered engineer.",
+  /**
+   * Only what the Centre has supplied. The previous Director's biography,
+   * areas of focus and dated education history were removed rather than
+   * carried over — they described a different person. Add the new Director's
+   * own profile here and both the homepage and /about/director pick it up.
+   */
   bio: [
-    'Dr. Bugaje holds a Ph.D. in Entrepreneurship from Universiti Putra Malaysia (UPM), an M.Sc. in Management from Salford Business School at the University of Salford, Manchester, and a B.Sc. in Business Administration from Ahmadu Bello University, Zaria.',
-    'His expertise is augmented by professional certifications and training in e-learning and courseware development, agricultural value chain financing, entrepreneurship boot camps, and the World Bank / NUC training-of-trainers programme on procurement.',
-    'Alongside directing the Centre, he is a lecturer and consultant. His contributions include research on the social impact of tax reforms, reviews of public service rules, and assessments of university governance structures. He also delivers service modules and courses on procurement within the Sustainable Procurement, Environmental and Social Standards Enhancement Centre of Excellence (SPESSECE), a World Bank project at ABU Zaria.',
+    "Prof. Baba El-Yakubu Jibril holds a B.Eng. from Ahmadu Bello University, Zaria, an M.Sc. from Dahran and a Ph.D. from the University of Salford. He is a Fellow of the Nigerian Society of Engineers (FNSE) and registered with the Council for the Regulation of Engineering in Nigeria (COREN).",
   ],
   education: [
-    { period: '2016 – 2018', qualification: 'Ph.D. in Entrepreneurship', institution: 'Universiti Putra Malaysia (UPM)' },
-    { period: '2012 – 2015', qualification: 'M.Sc. in Management', institution: 'Salford Business School, University of Salford, Manchester' },
-    { period: '2005 – 2010', qualification: 'B.Sc. in Business Administration', institution: 'Ahmadu Bello University, Zaria' },
-  ],
-  focus: [
-    'Rural and agricultural value chain financing',
-    'Entrepreneurship education and capacity building',
-    'Public sector governance and procurement',
-    'Enterprise development services',
-  ],
+    {
+      qualification: "Ph.D.",
+      institution: "University of Salford",
+    },
+    {
+      qualification: "M.Sc.",
+      institution: "Dahran",
+    },
+    {
+      qualification: "B.Eng.",
+      institution: "Ahmadu Bello University, Zaria",
+    },
+  ] as { period?: string; qualification: string; institution: string }[],
+  /** No areas of focus supplied yet; the section hides itself while empty. */
+  focus: [] as string[],
 };

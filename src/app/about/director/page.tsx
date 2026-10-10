@@ -35,17 +35,21 @@ export default function DirectorPage() {
                   {directorProfile.qualifications}
                 </p>
 
-                <h3 className="mt-10 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-ink-faint">
-                  Areas of focus
-                </h3>
-                <ul className="mt-4 space-y-2.5 text-sm text-ink-muted">
-                  {directorProfile.focus.map((area) => (
-                    <li key={area} className="flex gap-3">
-                      <span className="mt-2 h-px w-3 shrink-0 bg-gold-500" aria-hidden />
-                      {area}
-                    </li>
-                  ))}
-                </ul>
+                {directorProfile.focus.length > 0 && (
+                  <>
+                    <h3 className="mt-10 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-ink-faint">
+                      Areas of focus
+                    </h3>
+                    <ul className="mt-4 space-y-2.5 text-sm text-ink-muted">
+                      {directorProfile.focus.map((area) => (
+                        <li key={area} className="flex gap-3">
+                          <span className="mt-2 h-px w-3 shrink-0 bg-gold-500" aria-hidden />
+                          {area}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </div>
             </aside>
 
@@ -63,9 +67,11 @@ export default function DirectorPage() {
               <ul className="mt-8 divide-y divide-paper-edge border-y border-paper-edge">
                 {directorProfile.education.map((entry) => (
                   <li key={entry.qualification} className="flex flex-col gap-1 py-6 sm:flex-row sm:gap-10">
-                    <span className="shrink-0 text-xs uppercase tracking-[0.14em] text-ink-faint sm:w-32 sm:pt-1">
-                      {entry.period}
-                    </span>
+                    {entry.period && (
+                      <span className="shrink-0 text-xs uppercase tracking-[0.14em] text-ink-faint sm:w-32 sm:pt-1">
+                        {entry.period}
+                      </span>
+                    )}
                     <span>
                       <span className="block font-sans text-lg font-semibold text-ink">
                         {entry.qualification}

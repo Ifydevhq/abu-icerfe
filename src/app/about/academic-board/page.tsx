@@ -62,19 +62,12 @@ export default function AcademicBoardPage() {
               confirmed for publication. For enquiries about the Board or its work,
               please contact the Centre directly.
             </p>
-            <div className="mt-6 flex flex-wrap gap-6">
+            <div className="mt-6">
               <Link
                 href="/contact"
                 className="link-underline inline-flex text-sm font-medium text-brand-700"
               >
                 Contact the Centre
-                <ArrowRight className="h-4 w-4" aria-hidden />
-              </Link>
-              <Link
-                href="/about/governing-board"
-                className="link-underline inline-flex text-sm font-medium text-brand-700"
-              >
-                View the Governing Board
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             </div>

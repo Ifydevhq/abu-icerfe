@@ -27,7 +27,6 @@ export const navigation = [
     children: [
       { label: 'History', href: '/about/history', description: 'How the Centre began and what it has built' },
       { label: "Director's Office", href: '/about/director', description: 'Leadership and profile' },
-      { label: 'Governing Board', href: '/about/governing-board', description: 'University oversight' },
       { label: 'Academic Board', href: '/about/academic-board', description: 'Academic and professional direction' },
       { label: 'Organogram', href: '/about/organogram', description: 'How the Centre is structured' },
     ],

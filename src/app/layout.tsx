@@ -31,6 +31,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={sans.variable}>
+      <head>
+        {/* Entrance animations start hidden and are revealed by JS. Without
+            scripting there is nothing to reveal them, so force them visible. */}
+        <noscript>
+          <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+      </head>
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"

@@ -36,6 +36,10 @@ export const milestones = [
   },
 ];
 
+/**
+ * Key figures shown in the homepage masthead. Each one is also stated in the
+ * milestone prose above, which is the canonical copy — keep them in step.
+ */
 export const stats = [
   { value: '$850k', label: 'Founding MacArthur Foundation grant' },
   { value: '29', label: 'Staff trained across seven countries' },

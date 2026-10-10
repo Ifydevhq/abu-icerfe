@@ -1,23 +1,29 @@
-import { Hero } from '@grc/components/home/hero';
-import { StatsBand } from '@grc/components/home/stats-band';
-import { Purpose } from '@grc/components/home/purpose';
-import { ProgrammesPreview } from '@grc/components/home/programmes-preview';
-import { DirectorNote } from '@grc/components/home/director-note';
-import { NewsPreview } from '@grc/components/home/news-preview';
-import { Partners } from '@grc/components/home/partners';
-import { CtaBand } from '@grc/components/ui/cta-band';
+import { Masthead } from '@grc/components/home/masthead';
+import { Mandate } from '@grc/components/home/mandate';
+import { KnowledgeBand } from '@grc/components/home/knowledge-band';
+import { ProgrammesPanel } from '@grc/components/home/programmes-panel';
+import { EnterpriseLines } from '@grc/components/home/enterprise-lines';
+import { Directorate } from '@grc/components/home/directorate';
+import { ImpactBand } from '@grc/components/home/impact-band';
+import { DeliveryCarousel } from '@grc/components/home/delivery-carousel';
+import { Dispatches } from '@grc/components/home/dispatches';
+import { PartnerRail } from '@grc/components/home/partner-rail';
+import { ClosingCta } from '@grc/components/home/closing-cta';
 
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <StatsBand />
-      <Purpose />
-      <ProgrammesPreview />
-      <DirectorNote />
-      <NewsPreview />
-      <Partners />
-      <CtaBand />
+      <Masthead />
+      <Mandate />
+      <KnowledgeBand />
+      <ProgrammesPanel />
+      <EnterpriseLines />
+      <Directorate />
+      <ImpactBand />
+      <DeliveryCarousel />
+      <Dispatches />
+      <PartnerRail />
+      <ClosingCta />
     </>
   );
 }
