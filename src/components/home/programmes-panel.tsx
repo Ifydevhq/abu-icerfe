@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@grc/components/ui/container';
@@ -14,15 +15,28 @@ export const ProgrammesPanel = () => (
     <Container size="wide">
       <Reveal variant="panel">
         <div className="relative isolate overflow-hidden bg-brand-900 px-7 py-16 text-white md:px-14 md:py-20">
-          <div className="grain absolute inset-0 -z-10 opacity-40" aria-hidden />
-          <div
-            className="absolute inset-y-0 right-0 -z-10 w-2/3 opacity-[0.05]"
-            aria-hidden
-            style={{
-              backgroundImage:
-                'repeating-linear-gradient(115deg, #fff 0 1px, transparent 1px 16px)',
-            }}
-          />
+          {/* Same treatment as the impact band: a photograph held under a flat
+              90% wash so it reads as texture, with a second pass deepening the
+              left where the heading sits. Decorative, hence alt="". */}
+          <div className="absolute inset-0 -z-10" aria-hidden>
+            <Image
+              src="/images/abu-icerfe-event-pic-3.jpeg"
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 80vw, 100vw"
+              className="img-drift object-cover object-[center_40%]"
+            />
+            <div className="absolute inset-0 bg-brand-900/90" />
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-900/60 via-transparent to-transparent" />
+            <div
+              className="absolute inset-0 opacity-[0.05]"
+              style={{
+                backgroundImage:
+                  'repeating-linear-gradient(115deg, #fff 0 1px, transparent 1px 16px)',
+              }}
+            />
+            <div className="grain absolute inset-0 opacity-40" />
+          </div>
 
           <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
             <div className="max-w-2xl">

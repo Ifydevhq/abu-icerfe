@@ -59,13 +59,13 @@ export const Masthead = () => (
         gives the ground texture and a sense of place. Decorative, hence alt="". */}
     <div className="absolute inset-0 -z-10" aria-hidden>
       <div className="absolute inset-0 bg-brand-900" />
-      {/* <Image
+      <Image
         src="/images/campus.png"
         alt=""
         fill
         sizes="100vw"
         className="img-drift object-cover opacity-[0.14]"
-      /> */}
+      />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/80 to-brand-900/40" />
       <div
         className="absolute inset-0 opacity-[0.05]"
