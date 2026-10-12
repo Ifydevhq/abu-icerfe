@@ -64,7 +64,10 @@ export const Masthead = () => (
         alt=""
         fill
         sizes="100vw"
-        className="img-drift object-cover opacity-[0.14]"
+        // Brought forward on phones and tablets, where the hero carries no
+        // collage and this is the only photograph in the section. Desktop keeps
+        // the original 14% so it stays behind the cluster.
+        className="img-drift object-cover opacity-[0.24] lg:opacity-[0.14]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/80 to-brand-900/40" />
       <div

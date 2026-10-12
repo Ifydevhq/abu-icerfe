@@ -23,10 +23,10 @@ export const ImpactBand = () => (
         sizes="100vw"
         className="img-drift object-cover object-[center_40%]"
       />
-      {/* Flat 90% wash holds the whole band at an even darkness — the
-          photograph stays perceptible but never competes. A second pass
-          deepens the left, where the type sits. */}
-      <div className="absolute inset-0 bg-brand-900/90" />
+      {/* Flat 80% wash holds the whole band at an even darkness — the
+          photograph reads clearly but never competes. A second pass deepens
+          the left, where the type sits, keeping that side near 92% covered. */}
+      <div className="absolute inset-0 bg-brand-900/80" />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-900/60 via-transparent to-transparent" />
       <div
         className="absolute inset-0 opacity-[0.05]"
