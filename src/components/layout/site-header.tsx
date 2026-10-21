@@ -76,7 +76,7 @@ export const SiteHeader = () => {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      'px-4 py-2 text-sm font-medium transition-colors duration-200 ease-subtle',
+                      'whitespace-nowrap px-3 py-2 text-sm font-medium transition-colors duration-200 ease-subtle xl:px-4',
                       isActive(item.href) ? 'text-brand-700' : 'text-ink-muted hover:text-ink',
                     )}
                   >
@@ -97,7 +97,7 @@ export const SiteHeader = () => {
                     aria-expanded={openMenu === item.label}
                     onClick={() => setOpenMenu(openMenu === item.label ? null : item.label)}
                     className={cn(
-                      'flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors duration-200 ease-subtle',
+                      'flex items-center gap-1.5 whitespace-nowrap px-3 py-2 text-sm font-medium xl:px-4 transition-colors duration-200 ease-subtle',
                       isActive(item.href) ? 'text-brand-700' : 'text-ink-muted hover:text-ink',
                     )}
                   >
@@ -138,7 +138,7 @@ export const SiteHeader = () => {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="hidden bg-brand-700 px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 ease-subtle hover:bg-brand-800 lg:inline-flex"
+              className="hidden bg-brand-700 px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 ease-subtle hover:bg-brand-800 xl:inline-flex"
             >
               Contact
             </Link>

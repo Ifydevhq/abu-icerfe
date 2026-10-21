@@ -26,7 +26,7 @@ export const news: NewsItem[] = [
     category: "Facilities",
     date: "2019-12-25",
     excerpt:
-      "The Centre’s bakery on the ABU Main Campus, Samaru, was formally commissioned — putting the Improved Rocket Baker’s Oven into production.",
+      "The Centre’s bakery on the ABU Main Campus, Samaru, was formally commissioned, putting the Improved Rocket Baker’s Oven into production.",
   },
   {
     slug: "entrepreneurship-lab-shoe-polish",
@@ -65,7 +65,7 @@ export const news: NewsItem[] = [
     category: "Enterprise",
     date: "2019-12-25",
     excerpt:
-      "Liquid soap, jelly and hand sanitiser — the full Family Care range produced at the Centre.",
+      "Liquid soap, jelly and hand sanitiser make up the full Family Care range produced at the Centre.",
   },
   {
     slug: "entrepreneurship-training-graduation",
@@ -130,7 +130,7 @@ export const galleryItems = [
   },
   {
     title: "Effectuation in the classroom",
-    caption: "The “Patchwork Quilt” principle — forming partnerships",
+    caption: "The “Patchwork Quilt” principle, on forming partnerships",
     image: "/images/abu-icerfe-event-pic-6.jpeg",
   },
   {

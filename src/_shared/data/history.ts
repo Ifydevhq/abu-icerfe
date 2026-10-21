@@ -22,7 +22,7 @@ export const milestones = [
   {
     year: 'Facilities',
     title: 'The University’s first green building',
-    body: 'To address a shortage of staff offices and modern postgraduate teaching space, the Centre constructed the first green building on campus — a conference hall, an open postgraduate classroom and work stations.',
+    body: 'To address a shortage of staff offices and modern postgraduate teaching space, the Centre constructed the first green building on campus, comprising a conference hall, an open postgraduate classroom and work stations.',
   },
   {
     year: 'Technology',

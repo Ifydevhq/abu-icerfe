@@ -64,10 +64,10 @@ export const Masthead = () => (
         alt=""
         fill
         sizes="100vw"
-        // Brought forward on phones and tablets, where the hero carries no
-        // collage and this is the only photograph in the section. Desktop keeps
-        // the original 14% so it stays behind the cluster.
-        className="img-drift object-cover opacity-[0.24] lg:opacity-[0.14]"
+        // Carried higher on phones and tablets, where the hero has no collage
+        // and this is its only photograph. Desktop stays lower so the ground
+        // never competes with the cluster sitting over it.
+        className="img-drift object-cover opacity-[0.34] lg:opacity-[0.22]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/80 to-brand-900/40" />
       <div
@@ -119,8 +119,7 @@ export const Masthead = () => (
     <Container size="wide" className="relative py-16 md:py-20 lg:py-24">
       <div className={showHeroImage ? "lg:w-[calc(50%-20px)]" : "lg:max-w-4xl"}>
         <Reveal>
-          <p className="flex items-center gap-4 text-[0.7rem] font-medium uppercase tracking-[0.2em] text-gold-400">
-            <span className="h-px w-10 bg-gold-500" aria-hidden />
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-gold-400">
             {site.parent}
           </p>
         </Reveal>
@@ -142,7 +141,7 @@ export const Masthead = () => (
         <Reveal delay={320}>
           <p className="mt-7 max-w-prose leading-relaxed text-brand-100">
             {site.fullName} builds the expertise that rural financial
-            institutions and entrepreneurs need — through teaching, applied
+            institutions and entrepreneurs need, through teaching, applied
             research, training and business support services.
           </p>
         </Reveal>

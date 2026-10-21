@@ -10,7 +10,7 @@ import { formatDate } from '@grc/_shared/utils';
 
 export const metadata: Metadata = {
   title: 'News & Events',
-  description: 'Updates from the Centre — enterprise, training and facilities.',
+  description: 'Updates from the Centre on enterprise, training and facilities.',
 };
 
 export default function NewsPage() {

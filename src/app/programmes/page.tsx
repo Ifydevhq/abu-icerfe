@@ -20,7 +20,7 @@ export default function ProgrammesPage() {
       <PageHeader
         eyebrow="Study & train"
         title="Programmes and services"
-        intro="Postgraduate awards, professional training and consultancy — built on the Centre's research and delivered with international academic partners."
+        intro="Postgraduate awards, professional training and consultancy, built on the Centre's research and delivered with international academic partners."
         breadcrumb={[{ label: 'Programmes' }]}
       />
 
@@ -54,7 +54,7 @@ export default function ProgrammesPage() {
             <p className="mt-3 max-w-prose text-sm leading-relaxed text-ink-muted">
               The Centre has developed additional postgraduate and diploma awards in rural
               finance and entrepreneurship. Details and admission requirements are published
-              as each intake opens — contact the Centre for the current position.
+              as each intake opens. Contact the Centre for the current position.
             </p>
             <Link href="/contact" className="link-underline mt-5 inline-flex text-sm font-medium text-brand-700">
               Enquire about admissions
@@ -88,7 +88,7 @@ export default function ProgrammesPage() {
               </h2>
               <p className="mt-6 max-w-prose leading-relaxed text-ink-muted">
                 The Centre&apos;s skill acquisition training runs through working production
-                lines on campus — students and trainees learn by making and selling.
+                lines on campus. Students and trainees learn by making and selling.
               </p>
             </div>
             <div className="lg:col-span-7">

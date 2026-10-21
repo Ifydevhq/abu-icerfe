@@ -28,7 +28,7 @@ export const EnterpriseLines = () => (
           <Reveal delay={150}>
             <p className="mt-7 max-w-prose leading-relaxed text-ink-muted">
               The Centre&apos;s skill acquisition training runs through working production
-              lines on campus — students and trainees learn by making and selling.
+              lines on campus. Students and trainees learn by making and selling.
             </p>
           </Reveal>
           <Reveal delay={220}>
@@ -70,9 +70,8 @@ export const EnterpriseLines = () => (
                 The bakery runs on the first{' '}
                 <span className="font-medium text-ink">
                   Improved Rocket Baker&apos;s Oven built in Nigeria
-                </span>{' '}
-                — adopted from Uganda with a ₦1 million grant from Heinrich Böll Stiftung
-                Nigeria.
+                </span>, adopted from Uganda with a ₦1 million grant from Heinrich Böll
+                Stiftung Nigeria.
               </p>
             </div>
           </Reveal>

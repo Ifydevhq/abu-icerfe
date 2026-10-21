@@ -14,14 +14,14 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://icerfe.abu.edu.ng'),
   title: {
-    default: `${site.name} — ${site.fullName}`,
+    default: `${site.name}, ${site.fullName}`,
     template: `%s · ${site.name}`,
   },
   description:
-    'The International Center of Excellence for Rural Finance and Entrepreneurship at Ahmadu Bello University, Zaria — research, training and enterprise development in rural finance.',
+    'The International Center of Excellence for Rural Finance and Entrepreneurship at Ahmadu Bello University, Zaria. Research, training and enterprise development in rural finance.',
   icons: { icon: '/images/favicon.png' },
   openGraph: {
-    title: `${site.name} — ${site.fullName}`,
+    title: `${site.name}, ${site.fullName}`,
     description: site.vision,
     type: 'website',
     locale: 'en_NG',

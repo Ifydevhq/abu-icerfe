@@ -17,7 +17,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Get in touch with the Centre"
-        intro="For admissions, training, consultancy or partnership enquiries — reach the Centre directly."
+        intro="For admissions, training, consultancy or partnership enquiries, contact the Centre directly."
         breadcrumb={[{ label: 'Contact' }]}
       />
 

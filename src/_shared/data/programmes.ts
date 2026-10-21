@@ -39,7 +39,7 @@ export const programmes: Programme[] = [
 export const services = [
   {
     title: 'Capacity building & training',
-    body: 'Structured training for staff of microfinance banks, cooperatives and rural financial institutions — including credit, product development and strategic planning.',
+    body: 'Structured training for staff of microfinance banks, cooperatives and rural financial institutions, including credit, product development and strategic planning.',
   },
   {
     title: 'Curriculum development',

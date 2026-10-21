@@ -6,7 +6,7 @@ export const site = {
   vision:
     'To be a world-class Centre for research and training in Rural Finance and Entrepreneurship, and a point of reference in the creation and dissemination of practical knowledge for global rural financial institutions and entrepreneurs.',
   mission:
-    'To provide the resources and expertise that develop an entrepreneurial mindset and build capacity in rural finance — through teaching, research, training, networking and business support services.',
+    'To provide the resources and expertise that develop an entrepreneurial mindset and build capacity in rural finance, through teaching, research, training, networking and business support services.',
   address: {
     line1: 'Opposite ABU Sport Complex, Samaru Main Campus',
     line2: 'Along Sokoto Road, Samaru, Sabon Gari',
@@ -40,6 +40,7 @@ export const navigation = [
     ],
   },
   { label: 'Programmes', href: '/programmes' },
+  { label: 'Innovation Hub', href: '/innovation-hub' },
   { label: 'News & Events', href: '/news' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
